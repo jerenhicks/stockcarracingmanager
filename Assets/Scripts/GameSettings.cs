@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum  Difficulty 
+public enum Difficulty
 {
     Easy,
     Medium,
@@ -16,7 +16,11 @@ public class GameSettings : MonoBehaviour
     public Difficulty GameDifficulty;
     public Sprite SelectedLogo;
 
-    private void Awake()     {
+    public Player player = new Player();
+    public Partner partner = new Partner();
+
+    private void Awake()
+    {
         // Ensure singleton instance
         if (Instance != null && Instance != this)
         {

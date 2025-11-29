@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameMenu.unity
     guid: 590ee69f7f8ffa64590bad01d725fff1
   - enabled: 1
+    path: Assets/Scenes/IntroductionScene.unity
+    guid: f41a4e7010dabb74bb08aa165a1e25a0
+  - enabled: 1
     path: Assets/Scenes/TeamSetup.unity
     guid: b7597d89057ca324a89646b3f95ca66d
   - enabled: 1

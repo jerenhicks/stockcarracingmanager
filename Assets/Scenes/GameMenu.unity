@@ -789,7 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14a512e009e03f4dae9b776abe1d38b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuUI
-  newGameSceneName: TeamSetup
+  newGameSceneName: IntroductionScene
 --- !u!4 &1339015904
 Transform:
   m_ObjectHideFlags: 0
