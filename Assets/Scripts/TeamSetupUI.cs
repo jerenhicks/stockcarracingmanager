@@ -32,8 +32,10 @@ public class TeamSetupUI : MonoBehaviour
         ShowLogo(currentLogoIndex);
     }
 
-    private void ShowLogo(int index) {
-        if (availableLogos == null || availableLogos.Count == 0) {
+    private void ShowLogo(int index)
+    {
+        if (availableLogos == null || availableLogos.Count == 0)
+        {
             logoPreview.sprite = null;
             logoPreview.enabled = false;
             return;
@@ -45,7 +47,8 @@ public class TeamSetupUI : MonoBehaviour
     }
 
     // Hook this to PrevLogoButton OnClick
-    public void OnPrevLogo() {
+    public void OnPrevLogo()
+    {
         if (availableLogos == null || availableLogos.Count == 0) return;
 
         int newIndex = currentLogoIndex - 1;
@@ -54,7 +57,8 @@ public class TeamSetupUI : MonoBehaviour
     }
 
     // Hook this to NextLogoButton OnClick
-    public void OnNextLogo() {
+    public void OnNextLogo()
+    {
         if (availableLogos == null || availableLogos.Count == 0) return;
 
         int newIndex = (currentLogoIndex + 1) % availableLogos.Count;
@@ -63,28 +67,31 @@ public class TeamSetupUI : MonoBehaviour
 
 
     // Hook this to StartButton OnClick
-    public void OnStartGame() {
-        if (GameSettings.Instance == null) {
-            Debug.LogError("GameSettings singleton is missing!");
+    public void OnStartGame()
+    {
+        if (GameController.Instance == null)
+        {
+            Debug.LogError("GameController singleton is missing!");
             return;
         }
 
         // Save player choices
-        GameSettings.Instance.CompanyName = string.IsNullOrWhiteSpace(companyNameInput.text)
-            ? "New Team"      // default if blank
-            : companyNameInput.text;
+        // GameController.Instance.CompanyName = string.IsNullOrWhiteSpace(companyNameInput.text)
+        //     ? "New Team"      // default if blank
+        //     : companyNameInput.text;
 
-        GameSettings.Instance.GameDifficulty = (Difficulty)difficultyDropdown.value;
+        GameController.Instance.GameDifficulty = (Difficulty)difficultyDropdown.value;
 
-        if (availableLogos != null && availableLogos.Count > 0) {
-            GameSettings.Instance.SelectedLogo = availableLogos[currentLogoIndex];
+        if (availableLogos != null && availableLogos.Count > 0)
+        {
+            GameController.Instance.SelectedLogo = availableLogos[currentLogoIndex];
         }
 
         // For now, just reload the same scene or go to a placeholder scene
         // You can change "Garage" later when you make that scene.
         // SceneManager.LoadScene("Garage");
-        Debug.Log($"Team created: {GameSettings.Instance.CompanyName}, " +
-                  $"Difficulty: {GameSettings.Instance.GameDifficulty}, " +
+        Debug.Log($"Team created: {GameController.Instance.CompanyName}, " +
+                  $"Difficulty: {GameController.Instance.GameDifficulty}, " +
                   $"LogoIndex: {currentLogoIndex}");
     }
 }

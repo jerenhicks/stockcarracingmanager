@@ -5,4 +5,5 @@ public class Player
     public string lastName;
     public string pronouns;
     public string background;
+    public string businessName;
 }

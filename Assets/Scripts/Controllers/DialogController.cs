@@ -6,8 +6,10 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-public class DialogueUI : MonoBehaviour
+public class DialogController : MonoBehaviour
 {
+    public static DialogController Instance { get; private set; } = new DialogController();
+
     [Header("UI References")]
     [SerializeField] private GameObject dialogPanel;
     [SerializeField] private Image avatarImage;      // Avatar image
@@ -19,6 +21,19 @@ public class DialogueUI : MonoBehaviour
     public UnityEvent onDialogueFinished;
 
     private int currentIndex = -1;
+
+    private void Awake()
+    {
+        // Ensure singleton instance
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,21 +47,6 @@ public class DialogueUI : MonoBehaviour
         {
             dialogPanel.SetActive(false);
         }
-
-        //TEST CODE
-        StartDialog(new List<DialogEntry>
-        {
-            new DialogEntry
-            {
-                dialogMessage = "Welcome to the game!",
-                avatarImage = null // Assign a default avatar if needed
-            },
-            new DialogEntry
-            {
-                dialogMessage = "This is a sample dialogue.",
-                avatarImage = null
-            }
-        });
     }
 
     void Update()
@@ -89,21 +89,28 @@ public class DialogueUI : MonoBehaviour
 
         DialogEntry entry = dialogEntries[currentIndex];
 
-        if (avatarImage != null && entry.avatarImage != null)
+        if (avatarImage != null)
         {
-            avatarImage.sprite = entry.avatarImage;
+            if (entry.avatar != null)
+            {
+                avatarImage.sprite = entry.avatar;
+                avatarImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                avatarImage.gameObject.SetActive(false);
+            }
         }
 
         if (contentText != null)
         {
-            contentText.text = entry.dialogMessage;
+            contentText.text = entry.content;
         }
     }
 
-    // This is called whenever the user clicks anywhere on ChatPanel
+
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("DialogueUI clicked, showing next dialog entry.");
         ShowNext();
     }
 }

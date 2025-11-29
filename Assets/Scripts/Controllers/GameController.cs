@@ -7,12 +7,12 @@ public enum Difficulty
     Hard
 }
 
-public class GameSettings : MonoBehaviour
+public class GameController : MonoBehaviour
 {
-    public static GameSettings Instance { get; private set; } = new GameSettings();
+    public static GameController Instance { get; private set; } = new GameController();
 
     [Header("Player Choices")]
-    public string CompanyName;
+    public string CompanyName => player.businessName;
     public Difficulty GameDifficulty;
     public Sprite SelectedLogo;
 
