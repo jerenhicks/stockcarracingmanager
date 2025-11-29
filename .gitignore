@@ -1,0 +1,114 @@
+# ============================================================
+# Unity .gitignore (2025)
+# Based on Unity official templates + best practices
+# ============================================================
+
+# === Core Unity Generated Files ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Unity cache & crash reports
+sysinfo.txt
+*.stacktrace
+
+# === Unity Collaborate / Plastic SCM ===
+/[Uu]serSettings/
+
+# Plastic SCM
+/.plastic/
+/.plastic/
+
+# === Visual Studio / VS Code ===
+.vs/
+.vscode/
+*.csproj
+*.pidb
+*.sln
+*.suo
+*.cache
+*.pdb
+*.user
+*.userprefs
+*.unityproj
+*.booproj
+*.svd
+*.db
+*.opendb
+*.VC.db
+
+# Rider IDE
+.idea/
+*.iml
+
+# Mac / Linux clutter
+.DS_Store
+*.swp
+*.swo
+*.tmp
+
+# === Builds ===
+*.apk
+*.aab
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+
+# === Addressables ===
+/[Aa]ssets/**/AddressableAssetsData/*
+!/[Aa]ssets/**/AddressableAssetsData/*.asset
+!/[Aa]ssets/**/AddressableAssetsData/*.json
+
+# === Text Mesh Pro ===
+[Tt]extMesh Pro/**/Sprite Atlases/
+[Tt]extMesh Pro/**/Fonts/Generated/
+
+# === Auto-generated Unity files ===
+/[Aa]ssets/StreamingAssets/aa/*
+/[Aa]ssets/StreamingAssets/UnityAnalytics/*
+/[Aa]ssets/StreamingAssets/UnityIAP/*
+/[Aa]ssets/StreamingAssets/UnityServicesProjectConfiguration.json
+
+# === Crash logs and error dumps ===
+*.dmp
+*.mdmp
+*.crash
+*.errorlog
+
+# === Local build configs ===
+/ProjectSettings/ProjectVersion.txt
+/*.csproj
+/*.sln
+
+# === Ignore any “generated” meta issues ===
+/[Aa]ssets/**/.*.meta
+/[Aa]ssets/**/Thumbs.db
+
+# === Unity Gradle / Android ===
+/.gradle
+exportedProject/
+.gradle/
+local.properties
+
+# === Unity Cloud Build ===
+/[Uu]serSettings/UnityConnectSettings.asset
+/[Uu]serSettings/EditorUserSettings.asset
+
+# === Logs ===
+*.log
+*.trace
+
+# === Auto-generated Profiling files ===
+/[Aa]ssets/**/capturedFrame*
+/[Aa]ssets/**/rawFrame*
+/[Aa]ssets/**/StreamingAssets/aa/*
+    
+# Last catch-all
+*.orig
+*.bak
+*.tmp
+
