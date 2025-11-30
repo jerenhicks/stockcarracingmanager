@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class IntroductionFlowController : MonoBehaviour
 {
@@ -31,16 +32,20 @@ public class IntroductionFlowController : MonoBehaviour
 
     public void GoToPartnerPanel()
     {
-        ShowOnly(partnerPanel);
-        DialogController.Instance.StartDialog(new List<DialogEntry>
-        {
-            new DialogEntry
-            {
-                speakerName = "Narrator",
-                content = "Now, let's learn about your partner.",
-                avatar = null
-            }
-        });
+        //FIXME: this is done intentionally to work on other things. Load up things right now.
+        SceneManager.LoadScene("BusinessScene");
+
+
+        // ShowOnly(partnerPanel);
+        // DialogController.Instance.StartDialog(new List<DialogEntry>
+        // {
+        //     new DialogEntry
+        //     {
+        //         speakerName = "Narrator",
+        //         content = "Now, let's learn about your partner.",
+        //         avatar = null
+        //     }
+        // });
     }
 
     public void GoToPartnerBackstory()
