@@ -6,4 +6,5 @@ public class Player
     public string pronouns;
     public string background;
     public string businessName;
+    public Location location;
 }

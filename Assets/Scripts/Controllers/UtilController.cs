@@ -9,11 +9,13 @@ public class UtilController : MonoBehaviour
     List<string> maleFirstNames = new List<string>();
     List<string> femaleFirstNames = new List<string>();
     List<string> lastNames = new List<string>();
+    public List<Location> locations = new List<Location>();
 
     private static readonly string configsPath = Path.Combine(Application.dataPath, "Configs");
     private static readonly string maleFirstNamesPath = Path.Combine(configsPath, "male_names.txt");
     private static readonly string femaleFirstNamesPath = Path.Combine(configsPath, "female_names.txt");
     private static readonly string lastNamesPath = Path.Combine(configsPath, "last_names.txt");
+    private static readonly string locationsPath = Path.Combine(configsPath, "locations.json");
 
     private void Awake()
     {
@@ -26,6 +28,7 @@ public class UtilController : MonoBehaviour
 
         Instance = this;
         LoadNames();
+        LoadLocations();
         DontDestroyOnLoad(gameObject);
     }
 
@@ -50,6 +53,16 @@ public class UtilController : MonoBehaviour
             lastNames = File.ReadAllLines(lastNamesPath).ToList();
         }
     }
+
+    private void LoadLocations()
+    {
+        if (File.Exists(locationsPath))
+        {
+            string json = File.ReadAllText(locationsPath);
+            locations = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Location>>(json);
+        }
+    }
+
 
     public string GetRandomMaleFirstName()
     {

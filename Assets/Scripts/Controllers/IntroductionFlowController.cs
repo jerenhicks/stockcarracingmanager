@@ -34,6 +34,12 @@ public class IntroductionFlowController : MonoBehaviour
     {
         //FIXME: this is done intentionally to work on other things. Load up things right now.
         SceneManager.LoadScene("BusinessScene");
+        // UtilController util = UtilController.Instance;
+        // //list all the locations loaded
+        // foreach (Location loc in util.locations)
+        // {
+        //     Debug.Log($"Location: {loc.city}, {loc.state} - {loc.description} ({loc.latitude}, {loc.longitude})");
+        // }
 
 
         // ShowOnly(partnerPanel);

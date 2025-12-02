@@ -1,0 +1,51 @@
+[
+    {
+        "city": "Sierra Valley",
+        "state": "CA",
+        "latitude": 36.9861,
+        "longitude": -119.7601,
+        "description": "A sun-baked valley in central California known for its wide agricultural plains and long stretches of open highway. Sierra Valley has a history of grassroots racing culture, with dusty local tracks and a reputation for producing scrappy, resourceful race teams."
+    },
+    {
+        "city": "Redstone Flats",
+        "state": "TX",
+        "latitude": 32.7767,
+        "longitude": -96.7970,
+        "description": "Located deep in North Texas, Redstone Flats blends modern development with rugged racing heritage. The area is dotted with industrial garages and old drag strips, making it a prime home for builders who take pride in raw horsepower and big-engine engineering."
+    },
+    {
+        "city": "Palm Coast Bay",
+        "state": "FL",
+        "latitude": 28.5383,
+        "longitude": -81.3792,
+        "description": "A vibrant coastal city with warm weather, wide highways, and a year-round racing scene. Palm Coast Bay is famous for its speedboat culture and high-octane festivals, giving local teams a flair for style and showmanship both on and off the track."
+    },
+    {
+        "city": "Granite Ridge",
+        "state": "ME",
+        "latitude": 44.3106,
+        "longitude": -69.7795,
+        "description": "Nestled among tall pines and rolling hills, Granite Ridge offers a colder climate and a tight-knit community of stock car enthusiasts. The region’s small but passionate racing clubs are known for technical precision and disciplined driving styles."
+    },
+    {
+        "city": "Highline Ridge",
+        "state": "CO",
+        "latitude": 39.7392,
+        "longitude": -104.9903,
+        "description": "Perched near the Rocky Mountains, Highline Ridge is home to high-altitude testing grounds and a thriving automotive engineering scene. The thin air challenges engines and drivers alike, making teams here exceptionally strong in endurance and tuning."
+    },
+    {
+        "city": "Oakboro Downs",
+        "state": "NC",
+        "latitude": 35.2796,
+        "longitude": -80.8447,
+        "description": "Just outside the heart of Carolina racing country, Oakboro Downs mixes southern charm with a deep motorsports legacy. Many legendary teams trace their early roots to this region, where community garages and weekend races shape future champions."
+    },
+    {
+        "city": "Smoky Ridge",
+        "state": "TN",
+        "latitude": 35.9606,
+        "longitude": -83.9207,
+        "description": "Bordering the Misty Smoky Mountains, this area combines rural grit with strong regional pride. Teams from Smoky Ridge are known for their hands-on craftsmanship, creative car builds, and a never-quit attitude forged from generations of local racing."
+    }
+]
