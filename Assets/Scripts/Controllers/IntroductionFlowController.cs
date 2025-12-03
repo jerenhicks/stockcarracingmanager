@@ -33,7 +33,7 @@ public class IntroductionFlowController : MonoBehaviour
     public void GoToPartnerPanel()
     {
         //FIXME: this is done intentionally to work on other things. Load up things right now.
-        SceneManager.LoadScene("BusinessScene");
+        //SceneManager.LoadScene("BusinessScene");
         // UtilController util = UtilController.Instance;
         // //list all the locations loaded
         // foreach (Location loc in util.locations)
@@ -42,16 +42,16 @@ public class IntroductionFlowController : MonoBehaviour
         // }
 
 
-        // ShowOnly(partnerPanel);
-        // DialogController.Instance.StartDialog(new List<DialogEntry>
-        // {
-        //     new DialogEntry
-        //     {
-        //         speakerName = "Narrator",
-        //         content = "Now, let's learn about your partner.",
-        //         avatar = null
-        //     }
-        // });
+        ShowOnly(partnerPanel);
+        DialogController.Instance.StartDialog(new List<DialogEntry>
+        {
+            new DialogEntry
+            {
+                speakerName = "Narrator",
+                content = "Now, let's learn about your partner.",
+                avatar = null
+            }
+        });
     }
 
     public void GoToPartnerBackstory()
@@ -62,6 +62,11 @@ public class IntroductionFlowController : MonoBehaviour
     public void GoToPlayerBackstory()
     {
         ShowOnly(playerBackstoryPanel);
+    }
+
+    public void FinishIntroduction()
+    {
+        SceneManager.LoadScene("GarageScene");
     }
 
     private void ShowOnly(GameObject panelToShow)

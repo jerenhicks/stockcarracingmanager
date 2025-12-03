@@ -25,7 +25,9 @@ public class PlayerPanelUI : MonoBehaviour
         gs.player.firstName = firstNameInput.text;
         gs.player.lastName = lastNameInput.text;
         gs.player.businessName = businessNameInput.text;
-        gs.player.pronouns = selectedPronouns;
+        //FIXME: set pronouns properly
+        gs.player.pronouns = Pronouns.HeHim;
+
 
         Debug.Log($"Player Info: {gs.player.firstName} {gs.player.lastName}, Pronouns: {gs.player.pronouns}, Business Name: {gs.player.businessName}");
 
