@@ -66,7 +66,7 @@ public class IntroductionFlowController : MonoBehaviour
 
     public void FinishIntroduction()
     {
-        SceneManager.LoadScene("GarageScene");
+        SceneManager.LoadScene("BusinessScene");
     }
 
     private void ShowOnly(GameObject panelToShow)

@@ -32,7 +32,6 @@ public class DialogController : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -51,7 +50,7 @@ public class DialogController : MonoBehaviour
 
     void Update()
     {
-        if (!dialogPanel.activeSelf)
+        if (dialogPanel == null || !dialogPanel.activeInHierarchy)
             return;
 
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
