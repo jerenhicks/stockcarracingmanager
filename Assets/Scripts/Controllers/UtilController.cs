@@ -9,13 +9,16 @@ public class UtilController : MonoBehaviour
     List<string> maleFirstNames = new List<string>();
     List<string> femaleFirstNames = new List<string>();
     List<string> lastNames = new List<string>();
-    public List<Location> locations = new List<Location>();
+    public List<BusinessLocation> businessLLocations = new List<BusinessLocation>();
+    public List<Track> tracks = new List<Track>();
 
     private static readonly string configsPath = Path.Combine(Application.dataPath, "Configs");
     private static readonly string maleFirstNamesPath = Path.Combine(configsPath, "male_names.txt");
     private static readonly string femaleFirstNamesPath = Path.Combine(configsPath, "female_names.txt");
     private static readonly string lastNamesPath = Path.Combine(configsPath, "last_names.txt");
     private static readonly string locationsPath = Path.Combine(configsPath, "locations.json");
+    private static readonly string businessLocationsPath = Path.Combine(configsPath, "businesslocations.json");
+    private static readonly string tracksPath = Path.Combine(configsPath, "tracks.json");
 
     private void Awake()
     {
@@ -28,7 +31,8 @@ public class UtilController : MonoBehaviour
 
         Instance = this;
         LoadNames();
-        LoadLocations();
+        LoadBusinessLocations();
+        LoadTracks();
         DontDestroyOnLoad(gameObject);
     }
 
@@ -54,12 +58,32 @@ public class UtilController : MonoBehaviour
         }
     }
 
-    private void LoadLocations()
+    private void LoadLocations() 
     {
         if (File.Exists(locationsPath))
         {
             string json = File.ReadAllText(locationsPath);
-            locations = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Location>>(json);
+            // Assuming you have a LocationList wrapper class to deserialize a list of locations
+            LocationList locationList = Newtonsoft.Json.JsonConvert.DeserializeObject<LocationList>(json);
+            // Do something with locationList.locations if needed
+        }
+    }
+
+    private void LoadBusinessLocations()
+    {
+        if (File.Exists(businessLocationsPath))
+        {
+            string json = File.ReadAllText(businessLocationsPath);
+            businessLLocations = Newtonsoft.Json.JsonConvert.DeserializeObject<List<BusinessLocation>>(json);
+        }
+    }
+
+    private void LoadTracks()
+    {
+        if (File.Exists(tracksPath))
+        {
+            string json = File.ReadAllText(tracksPath);
+            tracks = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Track>>(json);
         }
     }
 

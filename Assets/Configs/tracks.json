@@ -1,0 +1,205 @@
+[
+  {
+    "name": "Highline Ridge Speedway",
+    "location": "Silver_Flats_CO",
+    "track_type": "Tri-Oval",
+    "length_miles": 1.5,
+    "tier": "Major",
+    "description": "A high-altitude intermediate track where thin air and wide racing grooves create unpredictable fuel strategies and dramatic finishes."
+  },
+  {
+    "name": "Oakboro Downs",
+    "location": "Oakboro_NC",
+    "track_type": "Quad-Oval",
+    "length_miles": 1.25,
+    "tier": "Major",
+    "description": "A Southeast cornerstone track known for intense competition, loyal fans, and frequent late-race cautions."
+  },
+  {
+    "name": "Suncoast Motorspeedway",
+    "location": "Port_Belle_FL",
+    "track_type": "Superspeedway",
+    "length_miles": 2.5,
+    "tier": "Major",
+    "description": "High-speed pack racing near the coast where weather shifts and drafting battles define every event."
+  },
+  {
+    "name": "Red Mesa Speedway",
+    "location": "Arroyo_Vista_AZ",
+    "track_type": "Oval",
+    "length_miles": 1.75,
+    "tier": "Major",
+    "description": "A desert oval with abrasive asphalt that punishes tires and rewards smooth, patient driving."
+  },
+  {
+    "name": "Lone Star Grand Circuit",
+    "location": "Brazos_Junction_TX",
+    "track_type": "Oval",
+    "length_miles": 2.0,
+    "tier": "Major",
+    "description": "A massive Texas facility built for speed, often hosting marquee races and championship finales."
+  },
+  {
+    "name": "Golden State Raceway",
+    "location": "Arroyo_Park_CA",
+    "track_type": "Oval",
+    "length_miles": 1.5,
+    "tier": "Major",
+    "description": "A polished West Coast venue with smooth pavement and high corner speeds that favor aerodynamic setups."
+  },
+  {
+    "name": "Great Lakes Superspeedway",
+    "location": "Harbor_Point_MI",
+    "track_type": "Superspeedway",
+    "length_miles": 2.0,
+    "tier": "Major",
+    "description": "Lake winds and cool temperatures make drafting unpredictable at this fast Midwest superspeedway."
+  },
+  {
+    "name": "Atlantic Crown Speedway",
+    "location": "Kingsport_NJ",
+    "track_type": "Oval",
+    "length_miles": 1.5,
+    "tier": "Major",
+    "description": "A Northeast staple featuring high banking and close-quarter racing that rewards aggressive drivers."
+  },
+  {
+    "name": "Prairie Star Speedway",
+    "location": "Flint_Creek_KS",
+    "track_type": "Oval",
+    "length_miles": 1.25,
+    "tier": "Major",
+    "description": "Flat corners and long straights place emphasis on braking performance and racecraft."
+  },
+  {
+    "name": "Southern Apex Raceway",
+    "location": "Tallwood_GA",
+    "track_type": "Tri-Oval",
+    "length_miles": 1.5,
+    "tier": "Major",
+    "description": "Known for extended green-flag runs and technical racing lines through the corners."
+  },
+
+  {
+    "name": "Iron Valley Raceway",
+    "location": "Millstone_PA",
+    "track_type": "Oval",
+    "length_miles": 1.0,
+    "tier": "Regional",
+    "description": "A gritty steel-country track that produces physical racing and frequent mechanical failures."
+  },
+  {
+    "name": "Pine Hollow Speedway",
+    "location": "Cedar_Run_VT",
+    "track_type": "Oval",
+    "length_miles": 0.75,
+    "tier": "Regional",
+    "description": "A tight mountain oval where momentum and patience matter more than raw horsepower."
+  },
+  {
+    "name": "Bayou Motorplex",
+    "location": "Lafitte_Crossing_LA",
+    "track_type": "Oval",
+    "length_miles": 1.25,
+    "tier": "Regional",
+    "description": "Hot, humid conditions test drivers and crews throughout this demanding southern race."
+  },
+  {
+    "name": "Crossroads Speedway",
+    "location": "Junction_City_MO",
+    "track_type": "Oval",
+    "length_miles": 1.0,
+    "tier": "Regional",
+    "description": "A central hub for regional racing, producing consistent side-by-side action."
+  },
+  {
+    "name": "Blue Ridge Raceway",
+    "location": "Summit_Falls_VA",
+    "track_type": "Oval",
+    "length_miles": 0.9,
+    "tier": "Regional",
+    "description": "Elevation changes and variable grip make this track tricky to master."
+  },
+  {
+    "name": "High Desert Speedway",
+    "location": "Coyote_Wells_NV",
+    "track_type": "Oval",
+    "length_miles": 1.3,
+    "tier": "Regional",
+    "description": "A dry climate and worn surface create multi-groove racing late in runs."
+  },
+  {
+    "name": "Northstar Speedway",
+    "location": "Pine_Lake_MN",
+    "track_type": "Oval",
+    "length_miles": 1.0,
+    "tier": "Regional",
+    "description": "Cold-weather racing challenges teams with tire temperature management."
+  },
+  {
+    "name": "Cascade Speedway",
+    "location": "Timberline_OR",
+    "track_type": "Oval",
+    "length_miles": 1.2,
+    "tier": "Regional",
+    "description": "Nestled in the forests, this track features changing grip as temperatures shift."
+  },
+
+  {
+    "name": "Maple Leaf Speedway",
+    "location": "Northfield_ME",
+    "track_type": "Short Oval",
+    "length_miles": 0.5,
+    "tier": "Local",
+    "description": "A classic bullring where tempers flare and bump-and-run passes are common."
+  },
+  {
+    "name": "Dust Devil Raceway",
+    "location": "Sandspur_NM",
+    "track_type": "Short Oval",
+    "length_miles": 0.6,
+    "tier": "Local",
+    "description": "Wind-blown dust and tight corners define this gritty desert short track."
+  },
+  {
+    "name": "Thunder Creek Speedway",
+    "location": "Mill_Run_OH",
+    "track_type": "Oval",
+    "length_miles": 0.75,
+    "tier": "Local",
+    "description": "A traditional Midwest oval with fast restarts and close finishes."
+  },
+  {
+    "name": "Cotton Belt Speedway",
+    "location": "Plainview_TX",
+    "track_type": "Short Oval",
+    "length_miles": 0.5,
+    "tier": "Local",
+    "description": "A tight Texas short track that rewards aggressive throttle control."
+  },
+  {
+    "name": "Hickory Ridge Speedway",
+    "location": "Pine_Bluff_SC",
+    "track_type": "Short Oval",
+    "length_miles": 0.6,
+    "tier": "Local",
+    "description": "A grassroots track known for producing future racing stars."
+  },
+
+  {
+    "name": "Prairie Road Course",
+    "location": "Elk_Run_OK",
+    "track_type": "Road Course",
+    "length_miles": 2.4,
+    "tier": "Regional",
+    "description": "A flowing road course that mixes high-speed straights with technical corners."
+  },
+  {
+    "name": "Seaside Grand Prix Circuit",
+    "location": "Coral_Bay_FL",
+    "track_type": "Road Course",
+    "length_miles": 2.1,
+    "tier": "Regional",
+    "description": "A coastal road circuit where braking zones and weather play major roles."
+  }
+]

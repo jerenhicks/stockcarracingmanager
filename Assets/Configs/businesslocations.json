@@ -1,0 +1,30 @@
+[
+  {
+    "location": "Sierra_Valley_CA",
+    "description": "A sun-baked valley in central California known for its wide agricultural plains and long stretches of open highway. Sierra Valley has a history of grassroots racing culture, with dusty local tracks and a reputation for producing scrappy, resourceful race teams."
+  },
+  {
+    "location": "Redstone_Flats_TX",
+    "description": "Located deep in North Texas, Redstone Flats blends modern development with rugged racing heritage. The area is dotted with industrial garages and old drag strips, making it a prime home for builders who take pride in raw horsepower and big-engine engineering."
+  },
+  {
+    "location": "Palm_Coast_Bay_FL",
+    "description": "A vibrant coastal city with warm weather, wide highways, and a year-round racing scene. Palm Coast Bay is famous for its speedboat culture and high-octane festivals, giving local teams a flair for style and showmanship both on and off the track."
+  },
+  {
+    "location": "Granite_Ridge_ME",
+    "description": "Nestled among tall pines and rolling hills, Granite Ridge offers a colder climate and a tight-knit community of stock car enthusiasts. The region’s small but passionate racing clubs are known for technical precision and disciplined driving styles."
+  },
+  {
+    "location": "Highline_Ridge_CO",
+    "description": "Perched near the Rocky Mountains, Highline Ridge is home to high-altitude testing grounds and a thriving automotive engineering scene. The thin air challenges engines and drivers alike, making teams here exceptionally strong in endurance and tuning."
+  },
+  {
+    "location": "Oakboro_Downs_NC",
+    "description": "Just outside the heart of Carolina racing country, Oakboro Downs mixes southern charm with a deep motorsports legacy. Many legendary teams trace their early roots to this region, where community garages and weekend races shape future champions."
+  },
+  {
+    "location": "Smoky_Ridge_TN",
+    "description": "Bordering the Misty Smoky Mountains, this area combines rural grit with strong regional pride. Teams from Smoky Ridge are known for their hands-on craftsmanship, creative car builds, and a never-quit attitude forged from generations of local racing."
+  }
+]

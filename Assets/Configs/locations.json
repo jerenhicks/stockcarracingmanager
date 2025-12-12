@@ -1,51 +1,227 @@
 [
-    {
-        "city": "Sierra Valley",
-        "state": "CA",
-        "latitude": 36.9861,
-        "longitude": -119.7601,
-        "description": "A sun-baked valley in central California known for its wide agricultural plains and long stretches of open highway. Sierra Valley has a history of grassroots racing culture, with dusty local tracks and a reputation for producing scrappy, resourceful race teams."
-    },
-    {
-        "city": "Redstone Flats",
-        "state": "TX",
-        "latitude": 32.7767,
-        "longitude": -96.7970,
-        "description": "Located deep in North Texas, Redstone Flats blends modern development with rugged racing heritage. The area is dotted with industrial garages and old drag strips, making it a prime home for builders who take pride in raw horsepower and big-engine engineering."
-    },
-    {
-        "city": "Palm Coast Bay",
-        "state": "FL",
-        "latitude": 28.5383,
-        "longitude": -81.3792,
-        "description": "A vibrant coastal city with warm weather, wide highways, and a year-round racing scene. Palm Coast Bay is famous for its speedboat culture and high-octane festivals, giving local teams a flair for style and showmanship both on and off the track."
-    },
-    {
-        "city": "Granite Ridge",
-        "state": "ME",
-        "latitude": 44.3106,
-        "longitude": -69.7795,
-        "description": "Nestled among tall pines and rolling hills, Granite Ridge offers a colder climate and a tight-knit community of stock car enthusiasts. The region’s small but passionate racing clubs are known for technical precision and disciplined driving styles."
-    },
-    {
-        "city": "Highline Ridge",
-        "state": "CO",
-        "latitude": 39.7392,
-        "longitude": -104.9903,
-        "description": "Perched near the Rocky Mountains, Highline Ridge is home to high-altitude testing grounds and a thriving automotive engineering scene. The thin air challenges engines and drivers alike, making teams here exceptionally strong in endurance and tuning."
-    },
-    {
-        "city": "Oakboro Downs",
-        "state": "NC",
-        "latitude": 35.2796,
-        "longitude": -80.8447,
-        "description": "Just outside the heart of Carolina racing country, Oakboro Downs mixes southern charm with a deep motorsports legacy. Many legendary teams trace their early roots to this region, where community garages and weekend races shape future champions."
-    },
-    {
-        "city": "Smoky Ridge",
-        "state": "TN",
-        "latitude": 35.9606,
-        "longitude": -83.9207,
-        "description": "Bordering the Misty Smoky Mountains, this area combines rural grit with strong regional pride. Teams from Smoky Ridge are known for their hands-on craftsmanship, creative car builds, and a never-quit attitude forged from generations of local racing."
-    }
+  {
+    "key": "Sierra_Valley_CA",
+    "city": "Sierra Valley",
+    "state": "CA",
+    "latitude": 36.9861,
+    "longitude": -119.7601
+  },
+  {
+    "key": "Redstone_Flats_TX",
+    "city": "Redstone Flats",
+    "state": "TX",
+    "latitude": 32.7767,
+    "longitude": -96.797
+  },
+  {
+    "key": "Palm_Coast_Bay_FL",
+    "city": "Palm Coast Bay",
+    "state": "FL",
+    "latitude": 28.5383,
+    "longitude": -81.3792
+  },
+  {
+    "key": "Granite_Ridge_ME",
+    "city": "Granite Ridge",
+    "state": "ME",
+    "latitude": 44.3106,
+    "longitude": -69.7795
+  },
+  {
+    "key": "Highline_Ridge_CO",
+    "city": "Highline Ridge",
+    "state": "CO",
+    "latitude": 39.7392,
+    "longitude": -104.9903
+  },
+  {
+    "key": "Oakboro_Downs_NC",
+    "city": "Oakboro Downs",
+    "state": "NC",
+    "latitude": 35.2796,
+    "longitude": -80.8447
+  },
+  {
+    "key": "Smoky_Ridge_TN",
+    "city": "Smoky Ridge",
+    "state": "TN",
+    "latitude": 35.9606,
+    "longitude": -83.9207
+  },
+
+  {
+    "key": "Silver_Flats_CO",
+    "city": "Silver Flats",
+    "state": "CO",
+    "latitude": 40.015,
+    "longitude": -105.2705
+  },
+  {
+    "key": "Oakboro_NC",
+    "city": "Oakboro",
+    "state": "NC",
+    "latitude": 35.2402,
+    "longitude": -80.6326
+  },
+  {
+    "key": "Port_Belle_FL",
+    "city": "Port Belle",
+    "state": "FL",
+    "latitude": 27.9506,
+    "longitude": -82.4572
+  },
+  {
+    "key": "Arroyo_Vista_AZ",
+    "city": "Arroyo Vista",
+    "state": "AZ",
+    "latitude": 33.4484,
+    "longitude": -112.074
+  },
+  {
+    "key": "Brazos_Junction_TX",
+    "city": "Brazos Junction",
+    "state": "TX",
+    "latitude": 31.9686,
+    "longitude": -99.9018
+  },
+  {
+    "key": "Arroyo_Park_CA",
+    "city": "Arroyo Park",
+    "state": "CA",
+    "latitude": 34.0522,
+    "longitude": -118.2437
+  },
+  {
+    "key": "Harbor_Point_MI",
+    "city": "Harbor Point",
+    "state": "MI",
+    "latitude": 42.3314,
+    "longitude": -83.0458
+  },
+  {
+    "key": "Kingsport_NJ",
+    "city": "Kingsport",
+    "state": "NJ",
+    "latitude": 40.0583,
+    "longitude": -74.4057
+  },
+  {
+    "key": "Flint_Creek_KS",
+    "city": "Flint Creek",
+    "state": "KS",
+    "latitude": 38.9717,
+    "longitude": -95.2353
+  },
+  {
+    "key": "Tallwood_GA",
+    "city": "Tallwood",
+    "state": "GA",
+    "latitude": 33.749,
+    "longitude": -84.388
+  },
+  {
+    "key": "Millstone_PA",
+    "city": "Millstone",
+    "state": "PA",
+    "latitude": 40.4406,
+    "longitude": -79.9959
+  },
+  {
+    "key": "Cedar_Run_VT",
+    "city": "Cedar Run",
+    "state": "VT",
+    "latitude": 44.4759,
+    "longitude": -73.2121
+  },
+  {
+    "key": "Lafitte_Crossing_LA",
+    "city": "Lafitte Crossing",
+    "state": "LA",
+    "latitude": 29.9511,
+    "longitude": -90.0715
+  },
+  {
+    "key": "Junction_City_MO",
+    "city": "Junction City",
+    "state": "MO",
+    "latitude": 38.5767,
+    "longitude": -92.1735
+  },
+  {
+    "key": "Summit_Falls_VA",
+    "city": "Summit Falls",
+    "state": "VA",
+    "latitude": 37.5407,
+    "longitude": -77.436
+  },
+  {
+    "key": "Coyote_Wells_NV",
+    "city": "Coyote Wells",
+    "state": "NV",
+    "latitude": 36.1699,
+    "longitude": -115.1398
+  },
+  {
+    "key": "Pine_Lake_MN",
+    "city": "Pine Lake",
+    "state": "MN",
+    "latitude": 44.9778,
+    "longitude": -93.265
+  },
+  {
+    "key": "Timberline_OR",
+    "city": "Timberline",
+    "state": "OR",
+    "latitude": 45.5152,
+    "longitude": -122.6784
+  },
+  {
+    "key": "Northfield_ME",
+    "city": "Northfield",
+    "state": "ME",
+    "latitude": 44.6939,
+    "longitude": -69.3816
+  },
+  {
+    "key": "Sandspur_NM",
+    "city": "Sandspur",
+    "state": "NM",
+    "latitude": 35.0844,
+    "longitude": -106.6504
+  },
+  {
+    "key": "Mill_Run_OH",
+    "city": "Mill Run",
+    "state": "OH",
+    "latitude": 39.9612,
+    "longitude": -82.9988
+  },
+  {
+    "key": "Plainview_TX",
+    "city": "Plainview",
+    "state": "TX",
+    "latitude": 34.1848,
+    "longitude": -101.7068
+  },
+  {
+    "key": "Pine_Bluff_SC",
+    "city": "Pine Bluff",
+    "state": "SC",
+    "latitude": 34.0007,
+    "longitude": -81.0348
+  },
+  {
+    "key": "Elk_Run_OK",
+    "city": "Elk Run",
+    "state": "OK",
+    "latitude": 35.4676,
+    "longitude": -97.5164
+  },
+  {
+    "key": "Coral_Bay_FL",
+    "city": "Coral Bay",
+    "state": "FL",
+    "latitude": 26.1224,
+    "longitude": -80.1373
+  }
 ]
